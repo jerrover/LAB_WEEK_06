@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
         itemTouchHelper.attachToRecyclerView(recyclerView)
 
         recyclerView.adapter = catAdapter
-        recyclerView.layoutManager = LinearLayoutManager(this,
-            LinearLayoutManager.VERTICAL, false)
+        recyclerView.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
         catAdapter.setData(
             listOf(
@@ -57,6 +57,55 @@ class MainActivity : AppCompatActivity() {
                     "Curious George",
                     "Award winning investigator",
                     "https://cdn2.thecatapi.com/images/bar.jpg"
+                ),
+                CatModel(
+                    Gender.Female,
+                    CatBreed.ExoticShorthair,
+                    "Luna",
+                    "Nighttime ninja",
+                    "https://cdn2.thecatapi.com/images/a2.jpg"
+                ),
+                CatModel(
+                    Gender.Male,
+                    CatBreed.AmericanCurl,
+                    "Simba",
+                    "Thinks he's a lion",
+                    "https://cdn2.thecatapi.com/images/332.jpg"
+                ),
+                CatModel(
+                    Gender.Male,
+                    CatBreed.BalineseJavanese,
+                    "Mochi",
+                    "Soft and squishy",
+                    "https://cdn2.thecatapi.com/images/3d4.jpg"
+                ),
+                CatModel(
+                    Gender.Female,
+                    CatBreed.ExoticShorthair,
+                    "Bella",
+                    "Professional napper",
+                    "https://cdn2.thecatapi.com/images/b02.jpg"
+                ),
+                CatModel(
+                    Gender.Male,
+                    CatBreed.AmericanCurl,
+                    "Oliver",
+                    "Loves food more than you",
+                    "https://cdn2.thecatapi.com/images/bto.jpg"
+                ),
+                CatModel(
+                    Gender.Unknown,
+                    CatBreed.BalineseJavanese,
+                    "Shadow",
+                    "Master of stealth",
+                    "https://cdn2.thecatapi.com/images/d55.jpg"
+                ),
+                CatModel(
+                    Gender.Female,
+                    CatBreed.ExoticShorthair,
+                    "Cleo",
+                    "Literal queen of the house",
+                    "https://cdn2.thecatapi.com/images/e3a.jpg"
                 )
             )
         )
